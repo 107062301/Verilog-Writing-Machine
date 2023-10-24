@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan  9 14:41:54 2020
+# Process ID: 17688
+# Current directory: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1
+# Command line: vivado.exe -log pmod_step_interface.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pmod_step_interface.tcl -notrace
+# Log file: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.vdi
+# Journal file: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pmod_step_interface.tcl -notrace

@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 27 17:23:14 2019
+# Process ID: 19332
+# Current directory: D:/USER/Desktop/Stepper_Motor_Full_Step
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20360 D:\USER\Desktop\Stepper_Motor_Full_Step\Stepper_Motor_Full_Step.xpr
+# Log file: D:/USER/Desktop/Stepper_Motor_Full_Step/vivado.log
+# Journal file: D:/USER/Desktop/Stepper_Motor_Full_Step\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 668.012 ; gain = 90.570
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 27 17:24:41 2019] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Fri Dec 27 17:30:26 2019] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 17:30:42 2019] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Fri Dec 27 17:30:42 2019] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -jobs 4
+[Fri Dec 27 17:34:16 2019] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -jobs 4
+[Fri Dec 27 17:34:33 2019] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_project
+create_project final C:/final -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 745.340 ; gain = 21.523
+add_files -norecurse {D:/USER/Desktop/Stepper_Motor_Full_Step/pmod_step_driver.v D:/USER/Desktop/Stepper_Motor_Full_Step/pmod_step_interface.v D:/USER/Desktop/Stepper_Motor_Full_Step/clock_div.v}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse D:/USER/Desktop/Stepper_Motor_Full_Step/claw_constraints.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 17:37:44 2019] Launched synth_1...
+Run output will be captured here: C:/final/final.runs/synth_1/runme.log
+[Fri Dec 27 17:37:44 2019] Launched impl_1...
+Run output will be captured here: C:/final/final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1873.012 ; gain = 1118.676
+set_property PROGRAM.FILE {C:/final/final.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/final/final.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 17:53:19 2019] Launched synth_1...
+Run output will be captured here: C:/final/final.runs/synth_1/runme.log
+[Fri Dec 27 17:53:19 2019] Launched impl_1...
+Run output will be captured here: C:/final/final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...

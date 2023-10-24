@@ -1,0 +1,782 @@
+
+*** Running vivado
+    with args -log pmod_step_interface.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmod_step_interface.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source pmod_step_interface.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+Command: synth_design -top pmod_step_interface -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 709.559 ; gain = 177.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pmod_step_interface' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:26]
+	Parameter define_speed bound to: 26'b00000000011110100001001000 
+	Parameter define_speed_slow bound to: 26'b00000000111101000010010000 
+	Parameter A bound to: 1 - type: integer 
+	Parameter B bound to: 2 - type: integer 
+	Parameter D bound to: 4 - type: integer 
+	Parameter V bound to: 22 - type: integer 
+	Parameter X_ bound to: 24 - type: integer 
+	Parameter S bound to: 19 - type: integer 
+	Parameter N bound to: 14 - type: integer 
+	Parameter Z_ bound to: 26 - type: integer 
+	Parameter Write bound to: 35 - type: integer 
+	Parameter Get bound to: 34 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divisor' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:3386]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divisor' (1#1) [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:3386]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:521]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (2#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:521]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:535]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:535]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:125]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:127]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:129]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:131]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:133]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:135]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:137]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:139]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:141]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:143]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:145]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:147]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:149]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:151]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:153]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:155]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:157]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:159]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:161]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:163]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:165]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:167]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:169]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:171]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:173]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:175]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:177]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:179]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:181]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:183]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:185]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:187]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:189]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:191]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:193]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:195]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:197]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:199]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:201]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:203]
+INFO: [Synth 8-6157] synthesizing module 'angle_decoder' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:454]
+INFO: [Synth 8-6155] done synthesizing module 'angle_decoder' (4#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:454]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:499]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (5#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:499]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:472]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (6#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:472]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [D:/USER/Desktop/LG-final_project/clock_div.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (7#1) [D:/USER/Desktop/LG-final_project/clock_div.v:25]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [D:/USER/Desktop/LG-final_project/key_decorder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/.Xil/Vivado-16172-DESKTOP-TI86LNN/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (8#1) [D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/.Xil/Vivado-16172-DESKTOP-TI86LNN/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'O_nePulse' [D:/USER/Desktop/LG-final_project/One_pulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'O_nePulse' (9#1) [D:/USER/Desktop/LG-final_project/One_pulse.v:1]
+INFO: [Synth 8-226] default block is never used [D:/USER/Desktop/LG-final_project/key_decorder.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (10#1) [D:/USER/Desktop/LG-final_project/key_decorder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pmod_step_driver' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:25]
+	Parameter sig4 bound to: 3'b001 
+	Parameter sig3 bound to: 3'b011 
+	Parameter sig2 bound to: 3'b010 
+	Parameter sig1 bound to: 3'b110 
+	Parameter sig0 bound to: 3'b000 
+	Parameter Wait bound to: 0 - type: integer 
+	Parameter A bound to: 1 - type: integer 
+	Parameter B bound to: 2 - type: integer 
+	Parameter C bound to: 3 - type: integer 
+	Parameter D bound to: 4 - type: integer 
+	Parameter E bound to: 5 - type: integer 
+	Parameter F bound to: 6 - type: integer 
+	Parameter G bound to: 7 - type: integer 
+	Parameter H bound to: 8 - type: integer 
+	Parameter I bound to: 9 - type: integer 
+	Parameter J bound to: 10 - type: integer 
+	Parameter K bound to: 11 - type: integer 
+	Parameter L bound to: 12 - type: integer 
+	Parameter M bound to: 13 - type: integer 
+	Parameter N bound to: 14 - type: integer 
+	Parameter O bound to: 15 - type: integer 
+	Parameter P bound to: 16 - type: integer 
+	Parameter Q bound to: 17 - type: integer 
+	Parameter R bound to: 18 - type: integer 
+	Parameter S bound to: 19 - type: integer 
+	Parameter T bound to: 20 - type: integer 
+	Parameter U bound to: 21 - type: integer 
+	Parameter V bound to: 22 - type: integer 
+	Parameter W bound to: 23 - type: integer 
+	Parameter X_ bound to: 24 - type: integer 
+	Parameter Y bound to: 25 - type: integer 
+	Parameter Z_ bound to: 26 - type: integer 
+	Parameter space bound to: 27 - type: integer 
+	Parameter under_line bound to: 28 - type: integer 
+	Parameter up bound to: 29 - type: integer 
+	Parameter down bound to: 30 - type: integer 
+	Parameter left bound to: 31 - type: integer 
+	Parameter right bound to: 32 - type: integer 
+	Parameter re_center bound to: 33 - type: integer 
+	Parameter Get bound to: 34 - type: integer 
+	Parameter Write bound to: 35 - type: integer 
+	Parameter num_0 bound to: 36 - type: integer 
+	Parameter num_1 bound to: 37 - type: integer 
+	Parameter num_2 bound to: 38 - type: integer 
+	Parameter num_3 bound to: 39 - type: integer 
+	Parameter num_4 bound to: 40 - type: integer 
+	Parameter num_5 bound to: 41 - type: integer 
+	Parameter num_6 bound to: 42 - type: integer 
+	Parameter num_7 bound to: 43 - type: integer 
+	Parameter num_8 bound to: 44 - type: integer 
+	Parameter num_9 bound to: 45 - type: integer 
+	Parameter ctrl bound to: 46 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Memory' [D:/USER/Desktop/LG-final_project/memory.v:3]
+	Parameter read bound to: 0 - type: integer 
+	Parameter write bound to: 1 - type: integer 
+	Parameter other bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (11#1) [D:/USER/Desktop/LG-final_project/memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_step_driver' (12#1) [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:25]
+WARNING: [Synth 8-689] width (8) of port connection 'controll' does not match port width (6) of module 'pmod_step_driver' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:393]
+WARNING: [Synth 8-689] width (8) of port connection 'state' does not match port width (6) of module 'pmod_step_driver' [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:399]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_step_interface' (13#1) [D:/USER/Desktop/LG-final_project/pmod_step_interface.v:26]
+WARNING: [Synth 8-3331] design Memory has unconnected port din[7]
+WARNING: [Synth 8-3331] design Memory has unconnected port din[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 792.523 ; gain = 260.477
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 792.523 ; gain = 260.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 792.523 ; gain = 260.477
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Finished Parsing XDC File [d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Parsing XDC File [D:/USER/Desktop/LG-final_project/claw_constraints.xdc]
+Finished Parsing XDC File [D:/USER/Desktop/LG-final_project/claw_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/USER/Desktop/LG-final_project/claw_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pmod_step_interface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pmod_step_interface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 932.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 932.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 932.469 ; gain = 400.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 932.469 ; gain = 400.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for key_de/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 932.469 ; gain = 400.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:2504]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:2495]
+INFO: [Synth 8-5546] ROM "next_pos_x" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wen" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "get" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "get" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+WARNING: [Synth 8-327] inferring latch for variable 'en_x_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:210]
+WARNING: [Synth 8-327] inferring latch for variable 'dir_x_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:320]
+WARNING: [Synth 8-327] inferring latch for variable 'en_y_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:211]
+WARNING: [Synth 8-327] inferring latch for variable 'dir_y_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:319]
+WARNING: [Synth 8-327] inferring latch for variable 'angle_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:212]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:217]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:276]
+WARNING: [Synth 8-327] inferring latch for variable 'next_pos_x_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:214]
+WARNING: [Synth 8-327] inferring latch for variable 'next_word_count_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:218]
+WARNING: [Synth 8-327] inferring latch for variable 'next_count_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:213]
+WARNING: [Synth 8-327] inferring latch for variable 'ren_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'wen_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'next_addr_reg' [D:/USER/Desktop/LG-final_project/pmod_step_driver.v:219]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 932.469 ; gain = 400.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 2     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 42    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 88    
++---RAMs : 
+	              384 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   3 Input     35 Bit        Muxes := 1     
+	  11 Input     35 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 7     
+	   6 Input     18 Bit        Muxes := 1     
+	   3 Input     18 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 4     
+	   8 Input      6 Bit        Muxes := 11    
+	   2 Input      6 Bit        Muxes := 15    
+	   7 Input      6 Bit        Muxes := 6     
+	  10 Input      6 Bit        Muxes := 3     
+	   9 Input      6 Bit        Muxes := 6     
+	   6 Input      6 Bit        Muxes := 9     
+	   5 Input      6 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	  46 Input      6 Bit        Muxes := 1     
+	  45 Input      6 Bit        Muxes := 1     
+	  46 Input      5 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	  46 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 29    
+	   6 Input      3 Bit        Muxes := 11    
+	   7 Input      3 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 8     
+	   9 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 2     
+	  46 Input      2 Bit        Muxes := 4     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 353   
+	   4 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 17    
+	   6 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 11    
+	  46 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pmod_step_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 7     
+	   6 Input     18 Bit        Muxes := 1     
+	   3 Input     18 Bit        Muxes := 1     
+	  45 Input      6 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+Module onepulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 2     
+Module O_nePulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+Module Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---RAMs : 
+	              384 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module pmod_step_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     35 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 11    
+	   2 Input      6 Bit        Muxes := 15    
+	   7 Input      6 Bit        Muxes := 6     
+	  10 Input      6 Bit        Muxes := 3     
+	   9 Input      6 Bit        Muxes := 6     
+	   6 Input      6 Bit        Muxes := 9     
+	   5 Input      6 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 2     
+	  46 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 3     
+	  46 Input      5 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	  46 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 29    
+	   6 Input      3 Bit        Muxes := 11    
+	   7 Input      3 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 8     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	  46 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 303   
+	   5 Input      1 Bit        Muxes := 17    
+	   6 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 11    
+	  46 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP en_x1, operation Mode is: (A:0xb9d56)*B2.
+DSP Report: register en_x1 is absorbed into DSP en_x1.
+DSP Report: operator en_x1 is absorbed into DSP en_x1.
+DSP Report: operator en_x1 is absorbed into DSP en_x1.
+DSP Report: Generating DSP en_y1, operation Mode is: (A:0xb9d56)*B.
+DSP Report: operator en_y1 is absorbed into DSP en_y1.
+DSP Report: operator en_y1 is absorbed into DSP en_y1.
+INFO: [Synth 8-3886] merging instance 'control/pos_x_reg[1]' (FDR) to 'control/en_x1__5'
+INFO: [Synth 8-3886] merging instance 'control/pos_x_reg[0]' (FDR) to 'control/en_x1__6'
+INFO: [Synth 8-3886] merging instance 'control/en_x1__4' (FDR) to 'control/pos_x_reg[2]'
+INFO: [Synth 8-3886] merging instance 'control/en_x1__3' (FDR) to 'control/pos_x_reg[3]'
+INFO: [Synth 8-3886] merging instance 'control/en_x1__2' (FDR) to 'control/pos_x_reg[4]'
+INFO: [Synth 8-3886] merging instance 'control/en_x1__1' (FDR) to 'control/pos_x_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (control/en_x1__0)
+INFO: [Synth 8-3886] merging instance 'control/angle_reg[0]' (LD) to 'control/angle_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (control/\angle_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (angle_reg[1]) is unused and will be removed from module pmod_step_driver.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 932.469 ; gain = 400.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|control     | m1/data_reg | Implied   | 64 x 6               | RAM64X1S x 6   | 
++------------+-------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pmod_step_driver | (A:0xb9d56)*B2 | 21     | 7      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|pmod_step_driver | (A:0xb9d56)*B  | 21     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 945.426 ; gain = 413.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 947.090 ; gain = 415.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|control     | m1/data_reg | Implied   | 64 x 6               | RAM64X1S x 6   | 
++------------+-------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 1007.656 ; gain = 475.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |KeyboardCtrl_0 |     1|
+|2     |BUFG           |     3|
+|3     |CARRY4         |    84|
+|4     |DSP48E1        |     1|
+|5     |DSP48E1_1      |     1|
+|6     |LUT1           |    21|
+|7     |LUT2           |   279|
+|8     |LUT3           |   132|
+|9     |LUT4           |   249|
+|10    |LUT5           |   213|
+|11    |LUT6           |   545|
+|12    |MUXF7          |     9|
+|13    |MUXF8          |     1|
+|14    |RAM64X1S       |     6|
+|15    |FDCE           |   119|
+|16    |FDRE           |   414|
+|17    |FDSE           |     2|
+|18    |LD             |    72|
+|19    |IBUF           |     2|
+|20    |OBUF           |    21|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------+------+
+|      |Instance           |Module           |Cells |
++------+-------------------+-----------------+------+
+|1     |top                |                 |  2186|
+|2     |  clk_wiz_0_inst   |clock_divisor    |    30|
+|3     |  compare          |comparator       |     2|
+|4     |  clock_Div        |clock_div        |   201|
+|5     |  control          |pmod_step_driver |  1298|
+|6     |    clk_wiz_0_inst |clock_divisor_78 |    30|
+|7     |    m1             |Memory           |    36|
+|8     |  count            |counter          |    36|
+|9     |  d1               |debounce         |     6|
+|10    |  d10              |debounce_0       |     6|
+|11    |  d11              |debounce_1       |     6|
+|12    |  d12              |debounce_2       |     6|
+|13    |  d13              |debounce_3       |     6|
+|14    |  d14              |debounce_4       |     6|
+|15    |  d15              |debounce_5       |     6|
+|16    |  d16              |debounce_6       |     6|
+|17    |  d17              |debounce_7       |     6|
+|18    |  d18              |debounce_8       |     6|
+|19    |  d19              |debounce_9       |     6|
+|20    |  d2               |debounce_10      |     6|
+|21    |  d20              |debounce_11      |     6|
+|22    |  d21              |debounce_12      |     6|
+|23    |  d22              |debounce_13      |     6|
+|24    |  d23              |debounce_14      |     6|
+|25    |  d24              |debounce_15      |     6|
+|26    |  d25              |debounce_16      |     6|
+|27    |  d26              |debounce_17      |     6|
+|28    |  d27              |debounce_18      |     6|
+|29    |  d28              |debounce_19      |     6|
+|30    |  d29              |debounce_20      |     6|
+|31    |  d3               |debounce_21      |     6|
+|32    |  d30              |debounce_22      |     6|
+|33    |  d31              |debounce_23      |     6|
+|34    |  d32              |debounce_24      |     6|
+|35    |  d33              |debounce_25      |     6|
+|36    |  d34              |debounce_26      |     6|
+|37    |  d345             |debounce_27      |     6|
+|38    |  d35              |debounce_28      |     6|
+|39    |  d36              |debounce_29      |     6|
+|40    |  d37              |debounce_30      |     6|
+|41    |  d38              |debounce_31      |     6|
+|42    |  d39              |debounce_32      |     6|
+|43    |  d4               |debounce_33      |     6|
+|44    |  d5               |debounce_34      |     6|
+|45    |  d6               |debounce_35      |     6|
+|46    |  d7               |debounce_36      |     6|
+|47    |  d8               |debounce_37      |     6|
+|48    |  d9               |debounce_38      |     6|
+|49    |  decode           |angle_decoder    |     8|
+|50    |  key_de           |KeyboardDecoder  |   159|
+|51    |    op             |O_nePulse        |     3|
+|52    |  o1               |onepulse         |     3|
+|53    |  o10              |onepulse_39      |    10|
+|54    |  o103             |onepulse_40      |     4|
+|55    |  o104             |onepulse_41      |    12|
+|56    |  o11              |onepulse_42      |     3|
+|57    |  o12              |onepulse_43      |     2|
+|58    |  o13              |onepulse_44      |     3|
+|59    |  o14              |onepulse_45      |     2|
+|60    |  o15              |onepulse_46      |    11|
+|61    |  o16              |onepulse_47      |     2|
+|62    |  o17              |onepulse_48      |     4|
+|63    |  o18              |onepulse_49      |     3|
+|64    |  o19              |onepulse_50      |     2|
+|65    |  o2               |onepulse_51      |     2|
+|66    |  o20              |onepulse_52      |     7|
+|67    |  o21              |onepulse_53      |     4|
+|68    |  o22              |onepulse_54      |     3|
+|69    |  o23              |onepulse_55      |     3|
+|70    |  o24              |onepulse_56      |     2|
+|71    |  o25              |onepulse_57      |     2|
+|72    |  o26              |onepulse_58      |     4|
+|73    |  o27              |onepulse_59      |     3|
+|74    |  o28              |onepulse_60      |     2|
+|75    |  o29              |onepulse_61      |     3|
+|76    |  o3               |onepulse_62      |     4|
+|77    |  o30              |onepulse_63      |     2|
+|78    |  o31              |onepulse_64      |     4|
+|79    |  o32              |onepulse_65      |     3|
+|80    |  o33              |onepulse_66      |     2|
+|81    |  o4               |onepulse_67      |     5|
+|82    |  o5               |onepulse_68      |     2|
+|83    |  o53              |onepulse_69      |     4|
+|84    |  o6               |onepulse_70      |     2|
+|85    |  o63              |onepulse_71      |     3|
+|86    |  o7               |onepulse_72      |     2|
+|87    |  o73              |onepulse_73      |     3|
+|88    |  o8               |onepulse_74      |     3|
+|89    |  o83              |onepulse_75      |     2|
+|90    |  o9               |onepulse_76      |     3|
+|91    |  o93              |onepulse_77      |     2|
++------+-------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1013.047 ; gain = 481.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1013.047 ; gain = 341.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 1013.047 ; gain = 481.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 174 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1013.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 78 instances were transformed.
+  LD => LDCE: 72 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 1013.047 ; gain = 717.883
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1013.047 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/pmod_step_interface.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pmod_step_interface_utilization_synth.rpt -pb pmod_step_interface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 14:41:39 2020...

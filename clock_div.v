@@ -1,0 +1,88 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: Digilent    
+// Engineer: Kaitlyn Franz
+// 
+// Create Date: 01/23/2016 03:44:35 PM
+// Design Name: Claw
+// Module Name: clock_div
+// Project Name: Claw_game
+// Target Devices: Basys3
+// Tool Versions: 2015.4
+// Description: This is a clock divider. It takes the system clock 
+// and divides that down to a slower clock. It counts at the rate of the 
+// system clock to define_speed and toggles the output clock signal. 
+// 
+// Dependencies: 
+// 
+// Revision: 1
+// Revision 0.01 - File Created
+// Additional Comments: 
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module clock_div(
+    input clk,
+    input rst,
+    input [25:0] speed_x,
+    input [25:0] speed_y,
+    output reg new_clk_x,
+    output reg new_clk_y
+    );
+    
+    // The constant that defines the clock speed. 
+    // Since the system clock is 100MHZ, 
+    // define_speed = 100MHz/(2*desired_clock_frequency)
+    
+    // Count value that counts to define_speed
+    reg [25:0] count_x,count_y;
+    
+    // Run on the positive edge of the clk and rst signals
+    always @ (posedge(clk),posedge(rst))
+    begin
+        // When rst is high set count and new_clk to 0
+        if (rst == 1'b1)
+        begin 
+            count_x = 26'b0;   
+            new_clk_x = 1'b0;            
+        end
+        // When the count has reached the constant
+        // reset count and toggle the output clock
+        else if (count_x == speed_x)
+        begin
+            count_x = 26'b0;
+            new_clk_x = ~new_clk_x;
+        end
+        // increment the clock and keep the output clock
+        // the same when the constant hasn't been reached        
+        else
+        begin
+            count_x = count_x + 1'b1;
+            new_clk_x = new_clk_x;
+        end
+    end
+    always @ (posedge(clk),posedge(rst))
+    begin
+        // When rst is high set count and new_clk to 0
+        if (rst == 1'b1)
+        begin 
+            count_y = 26'b0;   
+            new_clk_y = 1'b0;            
+        end
+        // When the count has reached the constant
+        // reset count and toggle the output clock
+        else if (count_y == speed_y)
+        begin
+            count_y = 26'b0;
+            new_clk_y = ~new_clk_y;
+        end
+        // increment the clock and keep the output clock
+        // the same when the constant hasn't been reached        
+        else
+        begin
+            count_y = count_y + 1'b1;
+            new_clk_y = new_clk_y;
+        end
+    end
+endmodule

@@ -1,0 +1,501 @@
+
+*** Running vivado
+    with args -log mem.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mem.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mem.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+Command: synth_design -top mem -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13796 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 708.816 ; gain = 177.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:23]
+	Parameter Get bound to: 0 - type: integer 
+	Parameter Write bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (1#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:276]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:290]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:46]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:48]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:50]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:52]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:54]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:56]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:58]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:60]
+WARNING: [Synth 8-689] width (9) of port connection 'pb' does not match port width (1) of module 'debounce' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:227]
+	Parameter read bound to: 0 - type: integer 
+	Parameter write bound to: 1 - type: integer 
+	Parameter other bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (3#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:227]
+INFO: [Synth 8-6157] synthesizing module 'clock_divisor' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:304]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divisor' (4#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:304]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/.Xil/Vivado-14820-DESKTOP-TI86LNN/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (5#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/.Xil/Vivado-14820-DESKTOP-TI86LNN/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'O_nePulse' [D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'O_nePulse' (6#1) [D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v:1]
+INFO: [Synth 8-226] default block is never used [D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (7#1) [D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (8#1) [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:23]
+WARNING: [Synth 8-3331] design mem has unconnected port enter
+WARNING: [Synth 8-3331] design mem has unconnected port digit[4]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[3]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[2]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[1]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 773.266 ; gain = 241.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 773.266 ; gain = 241.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 773.266 ; gain = 241.922
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Finished Parsing XDC File [d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'key_de/inst'
+Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mem_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mem_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 881.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 881.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_CLK. (constraint file  d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2_DATA. (constraint file  d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for key_de/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mem'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:149]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     Get |                                0 |                               00
+                   Write |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mem'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:128]
+WARNING: [Synth 8-327] inferring latch for variable 'next_word_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:126]
+WARNING: [Synth 8-327] inferring latch for variable 'next_addr_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'ren_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:99]
+WARNING: [Synth 8-327] inferring latch for variable 'wen_reg' [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v:99]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                1 Bit    Registers := 24    
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module onepulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module O_nePulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mem has unconnected port enter
+WARNING: [Synth 8-3331] design mem has unconnected port digit[4]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[3]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[2]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[1]
+WARNING: [Synth 8-3331] design mem has unconnected port digit[0]
+INFO: [Synth 8-3886] merging instance 'i_0/m1/dout_reg[6]' (FDE) to 'i_0/m1/dout_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (led_reg[7]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[6]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[5]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[4]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[3]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[2]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[1]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (led_reg[0]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_next_state_reg) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[5]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[4]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[3]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[2]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[1]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_word_reg[0]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[5]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[4]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[3]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[2]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[1]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (next_addr_reg[0]) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (ren_reg) is unused and will be removed from module mem.
+WARNING: [Synth 8-3332] Sequential element (wen_reg) is unused and will be removed from module mem.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|mem         | m1/data_reg | Implied   | 64 x 6               | RAM64X1S x 8   | 
++------------+-------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 881.227 ; gain = 349.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|mem         | m1/data_reg | Implied   | 64 x 6               | RAM64X1S x 8   | 
++------------+-------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 894.016 ; gain = 362.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |KeyboardCtrl_0 |     1|
+|2     |BUFG           |     1|
+|3     |CARRY4         |     6|
+|4     |LUT1           |     1|
+|5     |LUT2           |    30|
+|6     |LUT3           |    18|
+|7     |LUT4           |    32|
+|8     |LUT5           |    22|
+|9     |LUT6           |    71|
+|10    |MUXF7          |     3|
+|11    |RAM64X1S       |     7|
+|12    |FDCE           |    49|
+|13    |FDRE           |    99|
+|14    |IBUF           |     2|
+|15    |OBUF           |     8|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |   361|
+|2     |  clk_wiz_0_inst |clock_divisor   |    30|
+|3     |  d1             |debounce        |     6|
+|4     |  d2             |debounce_0      |     6|
+|5     |  d3             |debounce_1      |     6|
+|6     |  d4             |debounce_2      |     6|
+|7     |  d5             |debounce_3      |     6|
+|8     |  d6             |debounce_4      |     6|
+|9     |  d7             |debounce_5      |     6|
+|10    |  d8             |debounce_6      |     6|
+|11    |  d9             |debounce_7      |     6|
+|12    |  key_de         |KeyboardDecoder |   188|
+|13    |    op           |O_nePulse       |     3|
+|14    |  m1             |Memory          |    24|
+|15    |  o1             |onepulse        |     3|
+|16    |  o2             |onepulse_8      |     2|
+|17    |  o3             |onepulse_9      |     3|
+|18    |  o4             |onepulse_10     |     3|
+|19    |  o5             |onepulse_11     |     5|
+|20    |  o6             |onepulse_12     |     3|
+|21    |  o7             |onepulse_13     |     4|
+|22    |  o8             |onepulse_14     |     2|
+|23    |  o9             |onepulse_15     |     7|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 899.707 ; gain = 368.363
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 899.707 ; gain = 260.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 899.707 ; gain = 368.363
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 918.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 918.039 ; gain = 617.266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 918.039 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/mem.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mem_utilization_synth.rpt -pb mem_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 04:00:32 2020...

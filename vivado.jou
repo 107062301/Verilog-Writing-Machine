@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 29 20:03:01 2019
+# Process ID: 15312
+# Current directory: D:/USER/Desktop/Stepper_Motor_Full_Step
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19600 D:\USER\Desktop\Stepper_Motor_Full_Step\Stepper_Motor_Full_Step.xpr
+# Log file: D:/USER/Desktop/Stepper_Motor_Full_Step/vivado.log
+# Journal file: D:/USER/Desktop/Stepper_Motor_Full_Step\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {controll[4]} {controll[3]} {controll[2]} {controll[1]} {controll[0]}]]
+place_ports {controll[0]} V17
+place_ports {controll[1]} V16
+place_ports {controll[2]} W16
+place_ports {controll[3]} W17
+place_ports {controll[4]} W15
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

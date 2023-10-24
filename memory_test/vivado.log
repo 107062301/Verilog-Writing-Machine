@@ -1,0 +1,758 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan  9 03:00:57 2020
+# Process ID: 11268
+# Current directory: D:/USER/Desktop/LG-final_project/memory_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17300 D:\USER\Desktop\LG-final_project\memory_test\memory_test.xpr
+# Log file: D:/USER/Desktop/LG-final_project/memory_test/vivado.log
+# Journal file: D:/USER/Desktop/LG-final_project/memory_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USER/Desktop/LG-final_project/memory_test/memory_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 676.418 ; gain = 99.957
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip'.
+create_ip -name KeyboardCtrl -vendor xilinx.com -library user -version 1.0 -module_name KeyboardCtrl_0 -dir d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'KeyboardCtrl_0'...
+generate_target all [get_files  d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'KeyboardCtrl_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'KeyboardCtrl_0'...
+catch { config_ip_cache -export [get_ips -all KeyboardCtrl_0] }
+export_ip_user_files -of_objects [get_files d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci]
+launch_runs -jobs 4 KeyboardCtrl_0_synth_1
+[Thu Jan  9 03:08:38 2020] Launched KeyboardCtrl_0_synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/KeyboardCtrl_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci] -directory D:/USER/Desktop/LG-final_project/memory_test/memory_test.ip_user_files/sim_scripts -ip_user_files_dir D:/USER/Desktop/LG-final_project/memory_test/memory_test.ip_user_files -ipstatic_source_dir D:/USER/Desktop/LG-final_project/memory_test/memory_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/USER/Desktop/LG-final_project/memory_test/memory_test.cache/compile_simlib/modelsim} {questa=D:/USER/Desktop/LG-final_project/memory_test/memory_test.cache/compile_simlib/questa} {riviera=D:/USER/Desktop/LG-final_project/memory_test/memory_test.cache/compile_simlib/riviera} {activehdl=D:/USER/Desktop/LG-final_project/memory_test/memory_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {{D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jan  9 03:09:54 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+add_files -norecurse {{D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'onepulse()' found in library 'xil_defaultlib'
+Duplicate found in file D:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v
+	(Active) Duplicate found at line 274 of file D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/new/mem.v
+[Thu Jan  9 03:10:54 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jan  9 03:11:45 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp' for cell 'key_de/inst'
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1166.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 3 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1288.566 ; gain = 433.867
+set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_DATA]]
+place_ports PS2_CLK C17
+place_ports PS2_DATA B17
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1748.918 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.287 . Memory (MB): peak = 1763.516 ; gain = 14.598
+[Thu Jan  9 03:13:58 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1768.398 ; gain = 4.883
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2880.031 ; gain = 1111.633
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jan  9 03:20:14 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp' for cell 'key_de/inst'
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [D:/USER/Desktop/LG-final_project/memory_test/memory_test.srcs/constrs_1/new/test.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2925.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 7 instances
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2973.488 ; gain = 48.379
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+place_ports {led[3]} U15
+place_ports {led[4]} U14
+place_ports {led[5]} V14
+place_ports {led[6]} V13
+place_ports {led[7]} V3
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3127.703 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.262 . Memory (MB): peak = 3144.777 ; gain = 17.074
+[Thu Jan  9 03:23:04 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:24:00 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:24:00 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:30:39 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:30:39 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:32:43 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:32:43 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3226.648 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:38:34 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:38:34 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:39:26 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:39:26 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:51:31 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:51:31 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:52:52 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:52:52 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jan  9 03:59:24 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/synth_1/runme.log
+[Thu Jan  9 03:59:24 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/memory_test/memory_test.runs/impl_1/mem.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_project D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3240.711 ; gain = 0.000
+current_project memory_test
+close_project
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:08:19 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:08:19 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3240.711 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:16:34 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:16:35 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:22:44 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:22:44 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:34:22 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:34:22 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+close_hw
+close_project
+open_project D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/USER/Desktop/羅設實驗1/新增資料夾/Keyboard Sample Code/Keyboard Sample Code/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:38:09 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:38:09 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3240.711 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:43:02 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:43:02 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 04:58:53 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 04:58:53 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 05:00:43 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 05:00:43 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 05:03:04 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 05:03:04 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 05:14:49 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 05:14:49 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 06:22:43 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 06:22:43 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 06:24:26 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 06:24:26 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jan  9 06:25:21 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 06:44:22 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 07:16:00 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 07:37:43 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 07:37:43 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 07:53:46 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 07:53:46 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 08:34:11 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 08:34:11 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A6F6D2A" may be locked by another hw_server.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 09:18:15 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 3240.711 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:my:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:my:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:my:3121
+ERROR: [Labtools 27-2223] Unable to connect to hw_server with URL "TCP:my:3121".
+Resolution: 1. Check the host name, port number and network connectivity.
+2. Check to ensure the hw_server is running on the target.
+ERROR: [Common 17-39] 'connect_hw_server' failed due to earlier errors.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A6F6D2A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713276A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 10:00:15 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 10:00:15 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 10:03:40 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 10:03:40 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713276A
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 10:32:54 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 10:32:54 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 10:37:18 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 10:37:18 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 11:08:45 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 11:08:45 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jan  9 11:25:46 2020] Launched synth_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/synth_1/runme.log
+[Thu Jan  9 11:25:46 2020] Launched impl_1...
+Run output will be captured here: D:/USER/Desktop/LG-final_project/Stepper_Motor_Full_Step.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  9 11:32:27 2020...

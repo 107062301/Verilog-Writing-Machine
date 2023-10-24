@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 27 17:23:14 2019
+# Process ID: 19332
+# Current directory: D:/USER/Desktop/Stepper_Motor_Full_Step
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20360 D:\USER\Desktop\Stepper_Motor_Full_Step\Stepper_Motor_Full_Step.xpr
+# Log file: D:/USER/Desktop/Stepper_Motor_Full_Step/vivado.log
+# Journal file: D:/USER/Desktop/Stepper_Motor_Full_Step\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USER/Desktop/Stepper_Motor_Full_Step/Stepper_Motor_Full_Step.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+close_project
+create_project final C:/final -part xc7a35tcpg236-1
+add_files -norecurse {D:/USER/Desktop/Stepper_Motor_Full_Step/pmod_step_driver.v D:/USER/Desktop/Stepper_Motor_Full_Step/pmod_step_interface.v D:/USER/Desktop/Stepper_Motor_Full_Step/clock_div.v}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse D:/USER/Desktop/Stepper_Motor_Full_Step/claw_constraints.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/final/final.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/final/final.runs/impl_1/pmod_step_interface.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
