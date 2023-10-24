@@ -1,0 +1,158 @@
+﻿  glad.c
+  main.cpp
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(145): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(146): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(147): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(148): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(149): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(150): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(151): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(152): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(153): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(171): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(172): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(173): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(174): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(175): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(176): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(177): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(178): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(179): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(199): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(200): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(201): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(202): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(203): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(204): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(205): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(206): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(207): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(227): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(228): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(229): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(230): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(231): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(232): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(233): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(234): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(235): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(255): warning C4305: '-=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(258): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(259): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(260): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(261): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(262): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(263): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(264): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(265): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(266): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(278): warning C4305: '+=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(280): warning C4244: '/=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(281): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(282): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(283): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(284): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(285): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(286): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(287): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(288): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(289): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(311): warning C4305: '+=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(314): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(315): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(316): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(317): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(328): warning C4305: '-=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(330): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(331): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(332): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(333): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(345): warning C4244: '/=': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(349): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(350): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(351): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(352): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(355): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(356): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(357): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(358): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(387): warning C4244: '正在初始化': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(406): warning C4305: '正在初始化': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(483): warning C4101: 'temp': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(484): warning C4101: 'Myq': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(532): warning C4244: '正在初始化': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(525): warning C4101: 'R': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(537): warning C4101: 'temp': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(538): warning C4101: 'Myq': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'tr_l': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'bl_l': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'Torso': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'tr_h': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'Head': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'br_l': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'tl_h': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'tl_l': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'bl_h': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(604): warning C4101: 'br_h': 未參考的區域變數
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(732): warning C4305: '+=': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(736): warning C4305: '+=': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(740): warning C4305: '+=': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(744): warning C4305: '-=': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(748): warning C4305: '-=': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(751): warning C4305: '+=': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(795): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(804): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(812): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(813): warning C4244: '=': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(823): warning C4305: '-=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(826): warning C4305: '+=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(829): warning C4305: '-=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(832): warning C4305: '+=': 從 'double' 轉換為 'T'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+          with
+          [
+              T=float
+          ]
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(843): warning C4244: '正在初始化': 將 'double' 轉換為 'GLfloat'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(852): warning C4305: '-=': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(856): warning C4305: '+=': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(883): warning C4244: '=': 將 'GLfloat' 轉換為 'int'，由於類型不同，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1166): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1235): warning C4477: 'printf' : 格式字串 '%d' 需要 'int' 類型的引數，但 variadic 引數 1 的類型為 'unsigned __int64'
+  d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1235): note: 請考慮在格式字串中使用 '%zd'
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1235): warning C4477: 'printf' : 格式字串 '%d' 需要 'int' 類型的引數，但 variadic 引數 2 的類型為 'unsigned __int64'
+  d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1235): note: 請考慮在格式字串中使用 '%zd'
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1282): warning C4305: '=': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\main.cpp(1308): warning C4305: '引數': 從 'double' 轉換為 'GLfloat'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+  textfile.cpp
+d:\user\desktop\summer_cg\hw\test\openglframework-vs2017\openglframework-vs2017\textfile.cpp(23): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
+  正在產生程式碼...
+LINK : warning LNK4098: 預設的程式庫 'MSVCRT' 與其他使用的程式庫衝突，請使用 /NODEFAULTLIB:library
+  OpenGLFramework-VS2017.vcxproj -> D:\USER\Desktop\Summer_CG\HW\test\OpenGLFramework-VS2017\x64\Debug\OpenGLFramework-VS2017.exe
